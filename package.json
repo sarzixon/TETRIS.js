@@ -1,0 +1,41 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "Tetris game in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarzal666/TETRIS.js.git"
+  },
+  "keywords": [
+    "tetris"
+  ],
+  "author": "Sarzixon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarzal666/TETRIS.js/issues"
+  },
+  "homepage": "https://github.com/sarzal666/TETRIS.js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "file-loader": "^5.0.2"
+  }
+}
