@@ -1,29 +1,38 @@
 import '../style.css';
+import Board from './board';
+import * as base from './base';
 
 const canvas = document.querySelector('#game');
 const ctx = canvas.getContext('2d');
 
-
-// create a net of blocks
-const canvasWidth = 300;
-const canvasHeight = 600;
-const columns = 10;
-const rows = 20;
-const blockSize = 30;
-// console.log(blockSize);
-ctx.strokeStyle = "#a19494";
-for(let i = 30; i < canvasHeight; i+=blockSize) {
-    ctx.beginPath();
-    ctx.moveTo(i,0);
-    ctx.lineTo(i, canvasHeight);
-    ctx.moveTo(0,i);
-    ctx.lineTo(canvasWidth, i);
-    ctx.stroke();
-    // console.log(i);
-};
+// console.log(map.mapParameters);
+// map.drawNet();
 
 
 // one block
+// ctx.fillStyle = map.colors.Lblock;
+// ctx.rect(120, 120, map.mapParameters.blockSize - 1, map.mapParameters.blockSize - 1);
+// ctx.fill();
 
-// ctx.rect(135,100,blockSize,blockSize);
-// ctx.stroke();
+// class Block {
+//     constructor(color,width=29,height=29) {
+//         this.color = color;
+//         this. width = width;
+//         this.height = height;
+//     }
+// }
+// const test = new Block(Jblock);
+// console.log(test);
+const Tetris = () => {
+    //create new Map
+
+    const board = new Board(base.mapParameters.rows,base.mapParameters.columns);
+    //draw Net
+
+    board.drawNet();
+    board.createMap();
+    // map.drawNet();
+    // create Board object which contains map data structure
+    // const board = 
+};
+Tetris();
